@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data
 {
-    class EFRepository<T> : IAsyncRepository<T> where T : BaseEntity //base entity claslarıyla kullancaksın sadece 
+    public class EFRepository<T> : IAsyncRepository<T> where T : BaseEntity //base entity claslarıyla kullancaksın sadece 
     {
         private readonly PetFoodContext _dbContext;
 
