@@ -48,6 +48,7 @@ namespace Web
             services.AddScoped(typeof(IAsyncRepository<>), typeof(EFRepository<>)); //Soldaki tür talep edildiðinde saðdaki türü ver
 
             services.AddScoped<IHomeIndexViewModelService, HomeIndexViewModelService>();
+            services.AddScoped<IBasketViewModelService, BasketViewModelService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

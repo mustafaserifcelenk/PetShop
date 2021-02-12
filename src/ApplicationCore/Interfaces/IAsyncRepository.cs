@@ -10,7 +10,7 @@ namespace ApplicationCore.Interfaces
 {
     public interface IAsyncRepository<T> where T: BaseEntity
     {
-        Task<T> GetById(int id);
+        Task<T> GetByIdAsync(int id);
         Task<List<T>> ListAllAsync();
         Task<List<T>> ListAsync(ISpecification<T> spec);
         Task<T> AddAsync(T entity);
